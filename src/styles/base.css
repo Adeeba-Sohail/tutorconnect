@@ -1,0 +1,56 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.55;
+}
+
+h1, h2, h3 { line-height: 1.25; margin: 0 0 var(--space-3); }
+h1 { font-size: var(--text-2xl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
+p { margin: 0 0 var(--space-3); }
+ul, ol { margin: 0 0 var(--space-3); padding-left: 1.25rem; }
+code { background: var(--color-surface-soft); padding: 0 0.3em; border-radius: 4px; }
+
+a { color: var(--color-primary); text-underline-offset: 2px; }
+a:hover { color: var(--color-primary-hover); }
+
+img, svg { max-width: 100%; }
+
+/* Visible keyboard focus on everything interactive */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 6px;
+}
+main:focus { outline: none; box-shadow: none; }
+
+.skip-link {
+  position: absolute;
+  left: var(--space-3);
+  top: -4rem;
+  background: var(--color-surface);
+  padding: var(--space-2) var(--space-4);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius);
+  z-index: 100;
+}
+.skip-link:focus { top: var(--space-3); }
+
+.muted { color: var(--color-text-muted); }
+.hint { color: var(--color-text-muted); font-size: var(--text-sm); }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

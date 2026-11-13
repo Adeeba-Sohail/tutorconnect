@@ -1,0 +1,9 @@
+.steps { display: grid; gap: var(--space-3); padding-left: 1.5rem; }
+.steps li { padding-left: var(--space-2); }
+
+.profile-head { display: flex; gap: var(--space-4); align-items: center; flex-wrap: wrap; margin-bottom: var(--space-5); }
+.profile-head > div { min-width: 0; flex: 1 1 18rem; }
+.profile-head h1 { margin-bottom: var(--space-1); overflow-wrap: anywhere; }
+.profile-layout { display: grid; gap: var(--space-5); }
+@media (min-width: 52rem) { .profile-layout { grid-template-columns: 2fr 1fr; align-items: start; } }
+.profile-main section { margin-bottom: var(--space-5); }
