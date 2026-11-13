@@ -9,7 +9,7 @@ All tutors, prices and bookings are simulated.
 | **Student** | Adeeba Sohail |
 | **GitHub repository** | https://github.com/Adeeba-Sohail/tutorconnect |
 | **Live website** | https://tutorconnect-pi.vercel.app/ |
-| **Final commit** | `PASTE_FINAL_COMMIT_HASH` |
+
 
 ## Project description
 
